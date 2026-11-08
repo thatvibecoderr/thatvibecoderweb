@@ -1,0 +1,31 @@
+.row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.link {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--text);
+  border: 1px solid var(--line);
+  background: rgb(255 255 255 / 0.04);
+  transition: color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.link svg {
+  width: 20px;
+  height: 20px;
+}

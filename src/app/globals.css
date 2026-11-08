@@ -1,0 +1,73 @@
+/* One dark room, lit by Buddy's yellow. */
+:root {
+  --ink: #0f0d0a;
+  --room: #16130e;
+  --wall: #211c15;
+  --card: #1d1913;
+  --text: #f3ecdf;
+  --muted: #a59a87;
+  --accent: #ffc21a;
+  --line: rgb(255 255 255 / 0.12);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+/* shared list style for guides and guide steps */
+.list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list > li {
+  border-top: 1px solid var(--line);
+  padding-block: 18px;
+}
+
+.list small {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.list h2 {
+  font-size: 22px;
+  margin: 4px 0 6px;
+}
+
+.list p,
+.lead {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 65ch;
+}
+
+.lead {
+  font-size: 18px;
+  margin-bottom: 24px;
+}

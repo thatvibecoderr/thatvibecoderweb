@@ -4,6 +4,8 @@ export type Project = {
   kind: string;
   summary: string;
   guide?: string; // a guide page in src/content/guides.ts
+  /** A file in public/ people can download. Only projects with one are listed on /projects. */
+  download?: { href: string; label: string; note: string };
 };
 
 export const projects: Project[] = [
@@ -14,6 +16,11 @@ export const projects: Project[] = [
     summary:
       'A pixel version of me walks onto your screen when a reminder is due and asks, "Is this done?" Say no and he comes back in five minutes.',
     guide: "buddy",
+    download: {
+      href: "/downloads/HeyBuddy-Setup-1.0.0.exe",
+      label: "Download for Windows",
+      note: "Windows 10 / 11 · 17 MB · v1.0.0",
+    },
   },
   {
     slug: "bug-triage-agent",

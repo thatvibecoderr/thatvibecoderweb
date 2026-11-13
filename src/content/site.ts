@@ -33,6 +33,6 @@ export type NavItem = {
 
 /** The buttons that float beside Buddy on the home page. */
 export const nav: NavItem[] = [
-  { label: "Projects", href: "/projects", side: "left", says: "The things I've built. Still polishing them, coming soon!" },
-  { label: "Guides", href: "/guides", side: "right", says: "Commented a keyword on my reel? Your step-by-step guide is in here." },
+  { label: "Projects", href: "/projects", side: "left", says: "The things I've built. Hey Buddy is ready to download!" },
+  { label: "Guides", href: "/guides", side: "right", says: "Step-by-step guides for my reels. Writing them up, coming soon!" },
 ];
